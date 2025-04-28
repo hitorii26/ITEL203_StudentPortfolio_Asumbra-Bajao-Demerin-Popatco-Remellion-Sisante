@@ -1,0 +1,418 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-color: #471ca8;
+  --secondary-color: #884ab2;
+  --accent-color: #ff930a;
+  --accent-color2: #f24b04;
+  --highlights: #d1105a;
+  --dark: #1e1b2e;
+  --light: #fcfcfd;
+}
+
+body {
+  background: radial-gradient(
+    circle at 0% 0%,
+    var(--secondary-color),
+    var(--primary-color),
+    var(--dark),
+    var(--dark),
+    var(--dark),
+    var(--dark)
+  );
+  min-height: 100vh;
+  margin: 0;
+  padding: 45px;
+  font-family: "Lato", sans-serif;
+  color: var(--light);
+  line-height: 1.6;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--light);
+  margin-bottom: 20px;
+  padding: 10px 0;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo {
+  width: 30px;
+  height: 30px;
+  background-color: var(--accent-color);
+  border-radius: 50%;
+  box-shadow: 0 0 15px rgba(255, 147, 10, 0.5);
+}
+
+.logo-text,
+.portfolio {
+  opacity: 0.4;
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
+}
+
+.logo-text:hover,
+.portfolio:hover {
+  opacity: 1;
+  transform: translateY(-2px);
+}
+
+hr {
+  opacity: 0.2;
+  margin-bottom: 40px;
+  border: none;
+  height: 1px;
+  background: linear-gradient(to right, transparent, var(--light), transparent);
+}
+
+nav {
+  position: relative;
+  margin-bottom: 60px;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: flex-end;
+  gap: 3rem;
+  list-style: none;
+}
+
+.nav-links li {
+  position: relative;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: var(--light);
+  opacity: 0.4;
+  font-size: 1rem;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  padding: 5px 0;
+  display: inline-block;
+}
+
+.nav-links a:hover {
+  opacity: 1;
+  transform: translateY(-2px);
+}
+
+.nav-links a::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: var(--accent-color);
+  transition: width 0.3s ease;
+}
+
+.nav-links a:hover::after {
+  width: 100%;
+}
+
+.nav-links a.active {
+    opacity: 1;
+    position: relative;
+}
+  
+.nav-links a.active::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: var(--accent-color);
+}
+
+.hero1 {
+  display: flex;
+  align-items: center;
+  margin-bottom: 80px;
+  gap: 40px;
+}
+
+.welcome-header {
+  flex: 1;
+  max-width: 600px;
+}
+
+.welcome-header h1 {
+  font-family: "Poppins", sans-serif;
+  color: var(--light);
+  opacity: 0.5;
+  font-size: 4.5rem;
+  line-height: 1.1;
+  margin-bottom: 30px;
+}
+
+.welcome-message {
+  line-height: 1.7;
+}
+
+.welcome-message .message {
+  margin-bottom: 20px;
+  font-size: 1.1rem;
+}
+
+.welcome-message {
+  color: var(--light);
+  opacity: 0.4;
+}
+
+.welcome-message .message2 {
+    font-size: 1.1rem;
+}
+
+.hero1 .sticker {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero1 .sticker img {
+  width: 100%;
+  max-width: 25rem;
+  height: auto;
+  filter: drop-shadow(0 10px 20px rgba(0, 0, 0, 0.3));
+  transition: transform 0.5s ease, filter 0.5s ease;
+}
+
+.hero1 .sticker img:hover {
+  transform: translateY(-10px) scale(1.02);
+  filter: drop-shadow(0 15px 30px rgba(0, 0, 0, 0.4));
+}
+
+.por-descrip {
+  margin-top: 40px;
+}
+
+.por-descrip section {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  gap: 40px;
+  padding: 20px;
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.03);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.por-descrip section:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+}
+
+.por-descrip section .sticker {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.por-descrip section .sticker img {
+  width: 100%;
+  max-width: 10rem;
+  height: auto;
+  border-radius: 12px;
+  filter: drop-shadow(0 5px 15px rgba(0, 0, 0, 0.2));
+  transition: transform 0.4s ease, filter 0.4s ease;
+}
+
+.por-descrip section .sticker img:hover {
+  transform: scale(1.05) rotate(2deg);
+  filter: drop-shadow(0 10px 25px rgba(0, 0, 0, 0.3));
+}
+
+.por-descrip .descrip {
+  flex: 2;
+  color: var(--light);
+  padding: 0 20px;
+}
+
+.por-descrip .descrip h2 {
+  font-size: 1.4rem;
+  margin-bottom: 15px;
+  font-family: "Poppins", sans-serif;
+  position: relative;
+  display: inline-block;
+  opacity: 0.5;
+}
+
+.por-descrip .descrip h2::after {
+  content: "";
+  position: absolute;
+  width: 50%;
+  height: 3px;
+  bottom: -5px;
+  left: 0;
+  background: linear-gradient(to right, var(--accent-color), transparent);
+  border-radius: 3px;
+}
+
+.por-descrip .descrip p {
+  line-height: 1.8;
+  opacity: 0.4;
+  font-size: 0.95rem;
+}
+
+footer {
+  margin-top: 60px;
+  padding: 20px 0;
+  text-align: center;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.ta {
+  font-size: 0.9rem;
+  letter-spacing: 2px;
+  opacity: 0.5;
+  transition: opacity 0.3s ease;
+}
+
+.ta:hover {
+  opacity: 1;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 1200px) {
+  body {
+    padding: 30px;
+  }
+
+  .welcome-header h1 {
+    font-size: 3.5rem;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .hero1 {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .welcome-header {
+    max-width: 100%;
+  }
+
+  .welcome-header h1 {
+    font-size: 3rem;
+  }
+
+  .por-descrip section {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .por-descrip section:nth-child(2) {
+    flex-direction: column-reverse;
+  }
+
+  .por-descrip .descrip h2::after {
+    left: 25%;
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    padding: 20px;
+  }
+
+  .mobile-menu-toggle {
+    display: block;
+  }
+
+  .nav-links {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 70%;
+    height: 100vh;
+    background: linear-gradient(to bottom, var(--primary-color), var(--dark));
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    transition: right 0.3s ease;
+    z-index: 99;
+    box-shadow: -5px 0 20px rgba(0, 0, 0, 0.3);
+  }
+
+  .nav-links.active {
+    right: 0;
+  }
+
+  .nav-links a {
+    font-size: 1.2rem;
+  }
+
+  .welcome-header h1 {
+    font-size: 2.5rem;
+  }
+
+  .por-descrip section {
+    padding: 15px;
+    margin-bottom: 40px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  body {
+    padding: 15px;
+  }
+
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .portfolio {
+    align-self: flex-end;
+  }
+
+  .welcome-header h1 {
+    font-size: 2rem;
+  }
+
+  .welcome-message .message {
+    font-size: 1rem;
+  }
+
+  .message2 {
+    font-size: 1.1rem;
+  }
+
+  .por-descrip .descrip h2 {
+    font-size: 1.5rem;
+  }
+
+  .por-descrip .descrip p {
+    font-size: 0.95rem;
+  }
+
+  .nav-links {
+    width: 100%;
+  }
+}

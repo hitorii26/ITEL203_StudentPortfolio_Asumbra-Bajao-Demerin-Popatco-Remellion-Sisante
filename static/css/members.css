@@ -1,0 +1,213 @@
+.members-header {
+    text-align: center;
+    margin-bottom: 60px;
+}
+  
+.members-header h1 {
+    font-family: "Poppins", sans-serif;
+    color: var(--light);
+    opacity: 0.9;
+    font-size: 3.5rem;
+    line-height: 1.1;
+    margin-bottom: 20px;
+    background: linear-gradient(to right, var(--light), var(--accent-color));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    text-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+  
+.members-header p {
+    color: var(--light);
+    opacity: 0.7;
+    max-width: 700px;
+    margin: 0 auto;
+    font-size: 1.1rem;
+    line-height: 1.7;
+}
+  
+.members-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 30px;
+    margin-bottom: 60px;
+}
+  
+.member-card {
+    background: rgba(255, 255, 255, 0.03);
+    backdrop-filter: blur(10px);
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+  
+.member-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+}
+  
+.member-avatar {
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+    position: relative;
+}
+  
+.member-avatar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+  
+.member-card:hover .member-avatar img {
+    transform: scale(1.05);
+}
+  
+.member-info {
+    padding: 25px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+  
+.member-name {
+    font-family: "Poppins", sans-serif;
+    font-size: 1.5rem;
+    margin-bottom: 5px;
+    color: var(--light);
+    opacity: 0.7;
+}
+  
+.member-username {
+    font-family: "Lato", sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    margin-bottom: 15px;
+    color: var(--accent-color);
+    opacity: 0.9;
+}
+  
+.member-description {
+    color: var(--light);
+    opacity: 0.4;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    flex-grow: 1;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+  
+.details-button {
+    background: linear-gradient(to right, var(--primary-color), var(--secondary-color));
+    border: none;
+    color: var(--light);
+    padding: 10px 20px;
+    border-radius: 30px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    align-self: flex-start;
+    box-shadow: 0 5px 15px rgba(71, 28, 168, 0.3);
+    text-decoration: none;
+    display: inline-block;
+    text-align: center;
+}
+  
+.details-button:hover {
+    background: linear-gradient(to right, var(--secondary-color), var(--primary-color));
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(71, 28, 168, 0.4);
+}
+ 
+.details-button:active {
+    transform: translateY(0);
+    box-shadow: 0 3px 10px rgba(71, 28, 168, 0.3);
+}
+  
+.nav-links a.active {
+    opacity: 1;
+    position: relative;
+}
+  
+.nav-links a.active::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: var(--accent-color);
+}
+  
+@media screen and (max-width: 1200px) {
+    .members-header h1 {
+      font-size: 3rem;
+    }
+  
+    .members-grid {
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 25px;
+    }
+}
+  
+@media screen and (max-width: 992px) {
+    .members-header h1 {
+      font-size: 2.5rem;
+    }
+  
+    .members-grid {
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+      gap: 20px;
+    }
+}
+  
+@media screen and (max-width: 768px) {
+    .members-header {
+      margin-bottom: 40px;
+    }
+  
+    .members-header h1 {
+      font-size: 2.2rem;
+    }
+  
+    .members-header p {
+      font-size: 1rem;
+    }
+  
+    .members-grid {
+      grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+      gap: 15px;
+    }
+  
+    .member-info {
+      padding: 20px;
+    }
+  
+    .member-name {
+      font-size: 1.3rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .members-header h1 {
+      font-size: 1.8rem;
+    }
+  
+    .members-grid {
+      grid-template-columns: 1fr;
+      gap: 25px;
+    }
+  
+    .member-avatar {
+      height: 180px;
+    }
+}

@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Wonder Pets | Bajao's Profile</title>
+  <base href="C:\Users\hitorii\Desktop\ITEL203_StudentPortfolio_Asumbra-Bajao-Demerin-Popatco-Remillion-Sisante\">
+  <link rel="stylesheet" href="static\css/homepage.css">
+  <link rel="stylesheet" href="static\css/members.css">
+  <link rel="stylesheet" href="static\css/profile.css">
+  <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.6.0/uicons-regular-rounded/css/uicons-regular-rounded.css'>
+  <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.6.0/uicons-brands/css/uicons-brands.css'>
+</head>
+<body>
+  
+  <header>
+    <div class="logo-container">
+      <div class="logo"></div>
+      <div class="logo-text">Wonder Pets</div>
+    </div>
+    <div class="portfolio">PORTFOLIO</div>
+  </header>
+  <hr>
+  <nav>
+    <ul class="nav-links">
+      <li>
+        <a href="templates/homepage.html">Home</a>
+      </li>
+      <li>
+        <a href="templates/members.html">Members</a>
+      </li>
+      <li>
+        <a href="#">About</a>
+      </li>
+    </ul>
+  </nav>
+  
+  <main class="profile-main">
+    <!-- Back button -->
+    <a href="template/members.html" class="back-button">
+      <i class="fi fi-rr-arrow-left"></i> Back to Members
+    </a>
+    
+    <!-- Profile Header Section -->
+    <section class="profile-header">
+      <div class="profile-photo-container">
+        <img src="static/resources/avatar2.jpg" alt="Asumbra" class="profile-photo" onerror="this.src='/placeholder.svg?height=300&width=300'">
+      </div>
+      <div class="profile-info">
+        <h1 class="profile-name">John Paul B. Bajao</h1>
+        <h2 class="profile-username">@leftoverrice</h2>
+        <div class="profile-details">
+          <div class="profile-detail">
+            <span class="detail-label">Birthdate:</span>
+            <span class="detail-value">April 9, 2005</span>
+          </div>
+          <div class="profile-detail">
+            <span class="detail-label">Career Goal:</span>
+            <span class="detail-value">My career goal is to successfully finish my course, gain real-world experience, and build a stable career in my chosen field.  </span>
+          </div>
+        </div>
+        <p class="profile-description">
+            I'm John Paul, you can also call me badj. I might learn slowly, but I'm all in when it comes to my cours
+        </p>
+      </div>
+    </section>
+    
+    <!-- Projects Section -->
+    <section class="profile-section projects-section">
+      <div class="projects-header">
+        <h2 class="section-title">Projects</h2>
+        <div class="projects-filter">
+          <button class="filter-button active">All</button>
+          <button class="filter-button">Web</button>
+          <button class="filter-button">Mobile</button>
+          <button class="filter-button">UI/UX</button>
+        </div>
+      </div>
+
+      <div class="projects-grid">
+        <!-- Project 1 -->
+        <div class="project-card">
+          <div class="project-screenshot">
+            <img src="" alt="Project Screenshot" onerror="this.src='/placeholder.svg?height=200&width=350'">
+          </div>
+          <div class="project-info">
+            <h3 class="project-name">Alone in the darkness</h3>
+            <p class="project-description">
+                A text based horror/comedy game about a boy experiencing a  home invasion by monsters that lurks in the dark.
+            </p>
+            <div class="project-tech">
+              <span class="tech-tag">C#</span>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Project 2 -->
+        <div class="project-card">
+          <div class="project-screenshot">
+            <img src="static/resources/bajao-project2.jpg" alt="Project Screenshot" onerror="this.src='/placeholder.svg?height=200&width=350'">
+          </div>
+          <div class="project-info">
+            <h3 class="project-name">Big Brew</h3>
+            <p class="project-description">
+                Big Brew is an ordering system created to minimize the hassle, and track all order records. 
+            </p>
+            <div class="project-tech">
+              <span class="tech-tag">Java</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 3 -->
+      <div class="project-card">
+        <div class="project-screenshot">
+          <img src="static/resources/bajao-project3.jpg" alt="Project Screenshot" onerror="this.src='/placeholder.svg?height=200&width=350'">
+        </div>
+        <div class="project-info">
+          <h3 class="project-name">Sneakicks</h3>
+          <p class="project-description">
+            Sneakicks is an e-commerce website created to Buy, sell, and track any dry good products.
+          </p>
+          <div class="project-tech">
+            <span class="tech-tag">HTML</span>
+            <span class="tech-tag">CSS</span>
+            <span class="tech-tag">Javascript</span>
+            <span class="tech-tag">Python</span>
+            <span class="tech-tag">MySql</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="projects-pagination">
+      <button class="pagination-button active">1</button>
+      <button class="pagination-button">2</button>
+      <button class="pagination-button"><i class="fi fi-rr-angle-right"></i></button>
+    </div>
+    </section>
+    
+    <!-- Skills Section -->
+    <section class="profile-section skills-section">
+      <h2 class="section-title">Skills & Expertise</h2>
+      <div class="skills-container">
+        <div class="skills-column">
+          <h3 class="skills-subtitle">Technical Skills</h3>
+          <ul class="skills-list">
+            <li>
+              <img src="static/resources/html.png" alt="html">
+            </li>
+            <li>
+              <img src="static/resources/css.png" alt="css">
+            </li>
+            <li>
+              <img src="static/resources/js.png" alt="js">
+            </li>
+            <li>
+              <img src="static/resources/python.png" alt="python">
+            </li>
+            <li>
+                <img src="static/resources/java.png" alt="mysql">
+              </li>
+            <li>
+              <img src="static/resources/mysql.png" alt="mysql">
+            </li>
+          </ul>
+        </div>
+        <div class="skills-column">
+          <h3 class="skills-subtitle">Tools & Software</h3>
+          <ul class="skills-list">
+            <li>VS code</li>
+            <li>Git</li>
+            <li>Capcut</li>
+            <li>Apache Netbeans</li>
+            <li>Sqlyog</li>
+            <li>XAMPP</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    
+    <!-- Contact Information Section -->
+    <section class="profile-section contact-section">
+      <h2 class="section-title">Contact Information</h2>
+      <div class="contact-container">
+        <div class="contact-item">
+          <div class="contact-icon">
+            <i class="fi fi-rr-envelope"></i>
+          </div>
+          <div class="contact-detail">
+            <h3>Email</h3>
+            <p>johnpaulbajao50@gmail.com</p>
+          </div>
+        </div>
+        
+        <div class="contact-item">
+          <div class="contact-icon">
+            <i class="fi fi-rr-smartphone"></i>
+          </div>
+          <div class="contact-detail">
+            <h3>Phone</h3>
+            <p>+63 910 2604 231</p>
+          </div>
+      </div>
+    </section>
+    
+    <!-- CV Section -->
+    <section class="profile-section cv-section">
+      <h2 class="section-title">Curriculum Vitae</h2>
+      <div class="education-container">
+        <h3 class="cv-subtitle">Educational Background</h3>
+        
+        <div class="education-item">
+          <div class="education-year">2011 - 2017</div>
+          <div class="education-details">
+            <h4>Gregorio A. Herradura Elementary School</h4>
+        </div>
+        
+        <div class="education-item">
+          <div class="education-year">2017 - 2021</div>
+          <div class="education-details">
+            <h4>Nanhaya National High School</h4>
+          </div>
+        </div>
+        
+        <div class="education-item">
+          <div class="education-year">2021 - 2023</div>
+          <div class="education-details">
+            <h4>GENERAL ACADEMIC STRAND (GAS)</h4>
+            <p class="education-institution">Missionari Dela Fede CLC-CHS</p>
+          </div>
+        </div>
+
+        <div class="education-item">
+          <div class="education-year">2023 - current</div>
+          <div class="education-details">
+            <h4>Bachelor of Science in Information Technology</h4>
+            <p class="education-institution">Laguna Polytechnic State University</p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="cv-download">
+        <a href="#" class="download-button">
+          <i class="fi fi-rr-download"></i> Download Full CV
+        </a>
+      </div>
+    </section>
+  </main>
+  
+  <footer>
+    <div class="ta">ALL RIGHTS RESERVED 2025</div>
+  </footer>
+</body>
+</html>
