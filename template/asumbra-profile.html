@@ -1,252 +1,253 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Wonder Pets | Asumbra's Profile</title>
-  <base href="C:\Users\hitorii\Desktop\ITEL203_StudentPortfolio_Asumbra-Bajao-Demerin-Popatco-Remillion-Sisante\">
-  <link rel="stylesheet" href="static\css/homepage.css">
-  <link rel="stylesheet" href="static\css/members.css">
-  <link rel="stylesheet" href="static\css/profile.css">
-  <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.6.0/uicons-regular-rounded/css/uicons-regular-rounded.css'>
-  <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.6.0/uicons-brands/css/uicons-brands.css'>
-</head>
-<body>
-  
-  <header>
-    <div class="logo-container">
-      <div class="logo"></div>
-      <div class="logo-text">Wonder Pets</div>
-    </div>
-    <div class="portfolio">PORTFOLIO</div>
-  </header>
-  <hr>
-  <nav>
-    <ul class="nav-links">
-      <li>
-        <a href="templates/homepage.html">Home</a>
-      </li>
-      <li>
-        <a href="templates/members.html">Members</a>
-      </li>
-      <li>
-        <a href="#">About</a>
-      </li>
-    </ul>
-  </nav>
-  
-  <main class="profile-main">
-    <!-- Back button -->
-    <a href="template/members.html" class="back-button">
-      <i class="fi fi-rr-arrow-left"></i> Back to Members
-    </a>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Wonder Pets | Asumbra's Profile</title>
+    <link rel="stylesheet" href="../static/css/homepage.css">
+    <link rel="stylesheet" href="../static/css/members.css">
+    <link rel="stylesheet" href="../static/css/animation.css">
+    <link rel="stylesheet" href="../static/css/profile.css">
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.6.0/uicons-regular-rounded/css/uicons-regular-rounded.css'>
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.6.0/uicons-brands/css/uicons-brands.css'>
+  </head>
+  <body>
     
-    <!-- Profile Header Section -->
-    <section class="profile-header">
-      <div class="profile-photo-container">
-        <img src="static/resources/avatar1.jpg" alt="Asumbra" class="profile-photo" onerror="this.src='/placeholder.svg?height=300&width=300'">
+    <header>
+      <div class="logo-container slide-in-bottom">
+        <div class="logo"></div>
+        <div class="logo-text">Wonder Pets</div>
       </div>
-      <div class="profile-info">
-        <h1 class="profile-name">John Noe Asumbra</h1>
-        <h2 class="profile-username">@hitorii</h2>
-        <div class="profile-details">
-          <div class="profile-detail">
-            <span class="detail-label">Birthdate:</span>
-            <span class="detail-value">December 26, 2002</span>
-          </div>
-          <div class="profile-detail">
-            <span class="detail-label">Career Goal:</span>
-            <span class="detail-value">Lead UX Designer at a Fortune 500 company</span>
-          </div>
-        </div>
-        <p class="profile-description">
-          I'm John Noe Asumbra, 22 years old, UI/UX designer with a passion for creating intuitive and beautiful interfaces.
-        </p>
-      </div>
-    </section>
+      <div class="portfolio slide-in-bottom">PORTFOLIO</div>
+    </header>
+    <hr class="slide-in-bottom">
+    <nav>
+      <ul class="nav-links slide-in-bottom">
+        <li>
+          <a href="../template/homepage.html">Home</a>
+        </li>
+        <li>
+          <a href="../template/members.html" class="active">Members</a>
+        </li>
+        <li>
+          <a href="#">About</a>
+        </li>
+      </ul>
+    </nav>
     
-    <!-- Projects Section -->
-    <section class="profile-section projects-section">
-      <div class="projects-header">
-        <h2 class="section-title">Projects</h2>
-        <div class="projects-filter">
-          <button class="filter-button active">All</button>
-          <button class="filter-button">Web</button>
-          <button class="filter-button">Mobile</button>
-          <button class="filter-button">UI/UX</button>
-        </div>
-      </div>
+    <main class="profile-main">
+      <!-- Back button -->
+      <a href="../template/members.html" class="back-button back-in-Left">
+        <i class="fi fi-rr-arrow-left"></i> Back to Members
+      </a>
       
-      <div class="projects-grid">
-        <!-- Project 1 -->
-        <div class="project-card">
-          <div class="project-screenshot">
-            <img src="static/resources/asumbra-project1.png" alt="Project Screenshot" onerror="this.src='/placeholder.svg?height=200&width=350'">
+      <!-- Profile Header Section -->
+      <section class="profile-header back-in-Left2">
+        <div class="profile-photo-container scroll-in-up">
+          <img src="../static/resources/avatar1.jpg" alt="Asumbra" class="profile-photo" onerror="this.src='/placeholder.svg?height=300&width=300'">
+        </div>
+        <div class="profile-info">
+          <h1 class="profile-name">John Noe Asumbra</h1>
+          <h2 class="profile-username">@hitorii</h2>
+          <div class="profile-details">
+            <div class="profile-detail">
+              <span class="detail-label">Birthdate:</span>
+              <span class="detail-value">December 26, 2002</span>
+            </div>
+            <div class="profile-detail">
+              <span class="detail-label">Career Goal:</span>
+              <span class="detail-value">Lead UX Designer at a Fortune 500 company</span>
+            </div>
           </div>
-          <div class="project-info">
-            <h3 class="project-name">E-Nova</h3>
-            <p class="project-description">
-              An ecommerce website for seller and buyer
-            </p>
-            <div class="project-tech">
-              <span class="tech-tag">HTML</span>
-              <span class="tech-tag">JS</span>
-              <span class="tech-tag">CSS</span>
-              <span class="tech-tag">Python</span>
-              <span class="tech-tag">MySQL</span>
-              <span class="tech-tag">Flask</span>
+          <p class="profile-description">
+            I'm John Noe Asumbra, 22 years old, UI/UX designer with a passion for creating intuitive and beautiful interfaces.
+          </p>
+        </div>
+      </section>
+      
+      <!-- Projects Section -->
+      <section class="profile-section projects-section scroll-in-left">
+        <div class="projects-header">
+          <h2 class="section-title">Projects</h2>
+          <div class="projects-filter">
+            <button class="filter-button active">All</button>
+            <button class="filter-button">Web</button>
+            <button class="filter-button">Mobile</button>
+            <button class="filter-button">UI/UX</button>
+          </div>
+        </div>
+        
+        <div class="projects-grid">
+          <!-- Project 1 -->
+          <div class="project-card">
+            <div class="project-screenshot">
+              <img src="../static/resources/asumbra-project1.png" alt="Project Screenshot" onerror="this.src='/placeholder.svg?height=200&width=350'">
+            </div>
+            <div class="project-info">
+              <h3 class="project-name">E-Nova</h3>
+              <p class="project-description">
+                An ecommerce website for seller and buyer
+              </p>
+              <div class="project-tech">
+                <span class="tech-tag">HTML</span>
+                <span class="tech-tag">JS</span>
+                <span class="tech-tag">CSS</span>
+                <span class="tech-tag">Python</span>
+                <span class="tech-tag">MySQL</span>
+                <span class="tech-tag">Flask</span>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Project 2 -->
+          <div class="project-card">
+            <div class="project-screenshot">
+              <img src="../static/resources/asumbra-project2.png" alt="Project Screenshot" onerror="this.src='/placeholder.svg?height=200&width=350'">
+            </div>
+            <div class="project-info">
+              <h3 class="project-name">Listo</h3>
+              <p class="project-description">
+                A to-do-list organizer for students.
+              </p>
+              <div class="project-tech">
+                <span class="tech-tag">HTML</span>
+                <span class="tech-tag">JS</span>
+                <span class="tech-tag">CSS</span>
+                <span class="tech-tag">Python</span>
+                <span class="tech-tag">MySQL</span>
+                <span class="tech-tag">Flask</span>
+              </div>
+            </div>
+          </div>
+        
+        <div class="projects-pagination">
+          <button class="pagination-button active">1</button>
+          <button class="pagination-button">2</button>
+          <button class="pagination-button"><i class="fi fi-rr-angle-right"></i></button>
+        </div>
+      </section>
+      
+      
+      <!-- Skills Section -->
+      <section class="profile-section skills-section scroll-in-Right">
+        <h2 class="section-title">Skills & Expertise</h2>
+        <div class="skills-container">
+          <div class="skills-column">
+            <h3 class="skills-subtitle">Technical Skills</h3>
+            <ul class="skills-list">
+              <li>
+                <img src="../static/resources/html.png" alt="html">
+              </li>
+              <li>
+                <img src="../static/resources/css.png" alt="css">
+              </li>
+              <li>
+                <img src="../static/resources/js.png" alt="js">
+              </li>
+              <li>
+                <img src="../static/resources/python.png" alt="python">
+              </li>
+              <li>
+                <img src="../static/resources/mysql.png" alt="mysql">
+              </li>
+            </ul>
+          </div>
+          <div class="skills-column">
+            <h3 class="skills-subtitle">Tools & Software</h3>
+            <ul class="skills-list">
+              <li>VS code</li>
+              <li>Github</li>
+              <li>Git</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      
+      <!-- Contact Information Section -->
+      <section class="profile-section contact-section c">
+        <h2 class="section-title">Contact Information</h2>
+        <div class="contact-container">
+          <div class="contact-item">
+            <div class="contact-icon">
+              <i class="fi fi-rr-envelope"></i>
+            </div>
+            <div class="contact-detail">
+              <h3>Email</h3>
+              <p>noeasumbra122602@gmail.com</p>
+            </div>
+          </div>
+          
+          <div class="contact-item">
+            <div class="contact-icon">
+              <i class="fi fi-rr-smartphone"></i>
+            </div>
+            <div class="contact-detail">
+              <h3>Phone</h3>
+              <p>+63 981 1922 035</p>
+            </div>
+          </div>
+          
+          <div class="social-media">
+            <h3>Social Media</h3>
+            <div class="social-icons">
+              <a href="https://www.facebook.com/hitorii.26" class="social-icon" aria-label="Facebook">
+                <i class="fi fi-brands-facebook"></i>
+              </a>
+              <a href="https://github.com/hitorii26" class="social-icon" aria-label="Github">
+                <i class="fi fi-brands-github"></i>
+              </a>
             </div>
           </div>
         </div>
-        
-        <!-- Project 2 -->
-        <div class="project-card">
-          <div class="project-screenshot">
-            <img src="static/resources/asumbra-project2.png" alt="Project Screenshot" onerror="this.src='/placeholder.svg?height=200&width=350'">
+      </section>
+      
+      <!-- CV Section -->
+      <section class="profile-section cv-section scroll-in-up">
+        <h2 class="section-title">Curriculum Vitae</h2>
+        <div class="education-container">
+          <h3 class="cv-subtitle">Educational Background</h3>
+          
+          <div class="education-item">
+            <div class="education-year">2013 - 2016</div>
+            <div class="education-details">
+              <h4>Puypuy Elemetary School</h4>
           </div>
-          <div class="project-info">
-            <h3 class="project-name">Listo</h3>
-            <p class="project-description">
-              A to-do-list organizer for students.
-            </p>
-            <div class="project-tech">
-              <span class="tech-tag">HTML</span>
-              <span class="tech-tag">JS</span>
-              <span class="tech-tag">CSS</span>
-              <span class="tech-tag">Python</span>
-              <span class="tech-tag">MySQL</span>
-              <span class="tech-tag">Flask</span>
+          
+          <div class="education-item">
+            <div class="education-year">2016 - 2020</div>
+            <div class="education-details">
+              <h4>Masaya Integrated National Highschool</h4>
             </div>
           </div>
-        </div>
-      
-      <div class="projects-pagination">
-        <button class="pagination-button active">1</button>
-        <button class="pagination-button">2</button>
-        <button class="pagination-button"><i class="fi fi-rr-angle-right"></i></button>
-      </div>
-    </section>
-    
-    
-    <!-- Skills Section -->
-    <section class="profile-section skills-section">
-      <h2 class="section-title">Skills & Expertise</h2>
-      <div class="skills-container">
-        <div class="skills-column">
-          <h3 class="skills-subtitle">Technical Skills</h3>
-          <ul class="skills-list">
-            <li>
-              <img src="static/resources/html.png" alt="html">
-            </li>
-            <li>
-              <img src="static/resources/css.png" alt="css">
-            </li>
-            <li>
-              <img src="static/resources/js.png" alt="js">
-            </li>
-            <li>
-              <img src="static/resources/python.png" alt="python">
-            </li>
-            <li>
-              <img src="static/resources/mysql.png" alt="mysql">
-            </li>
-          </ul>
-        </div>
-        <div class="skills-column">
-          <h3 class="skills-subtitle">Tools & Software</h3>
-          <ul class="skills-list">
-            <li>VS code</li>
-            <li>Github</li>
-            <li>Git</li>
-          </ul>
-        </div>
-      </div>
-    </section>
-    
-    <!-- Contact Information Section -->
-    <section class="profile-section contact-section">
-      <h2 class="section-title">Contact Information</h2>
-      <div class="contact-container">
-        <div class="contact-item">
-          <div class="contact-icon">
-            <i class="fi fi-rr-envelope"></i>
+          
+          <div class="education-item">
+            <div class="education-year">2020 - 2022</div>
+            <div class="education-details">
+              <h4>STEM</h4>
+              <p class="education-institution">Masaya Integrated National Highschool</p>
+            </div>
           </div>
-          <div class="contact-detail">
-            <h3>Email</h3>
-            <p>noeasumbra122602@gmail.com</p>
-          </div>
-        </div>
-        
-        <div class="contact-item">
-          <div class="contact-icon">
-            <i class="fi fi-rr-smartphone"></i>
-          </div>
-          <div class="contact-detail">
-            <h3>Phone</h3>
-            <p>+63 981 1922 035</p>
-          </div>
-        </div>
-        
-        <div class="social-media">
-          <h3>Social Media</h3>
-          <div class="social-icons">
-            <a href="https://www.facebook.com/hitorii.26" class="social-icon" aria-label="Facebook">
-              <i class="fi fi-brands-facebook"></i>
-            </a>
-            <a href="https://github.com/hitorii26" class="social-icon" aria-label="Github">
-              <i class="fi fi-brands-github"></i>
-            </a>
-          </div>
-        </div>
-      </div>
-    </section>
-    
-    <!-- CV Section -->
-    <section class="profile-section cv-section">
-      <h2 class="section-title">Curriculum Vitae</h2>
-      <div class="education-container">
-        <h3 class="cv-subtitle">Educational Background</h3>
-        
-        <div class="education-item">
-          <div class="education-year">2013 - 2016</div>
-          <div class="education-details">
-            <h4>Puypuy Elemetary School</h4>
-        </div>
-        
-        <div class="education-item">
-          <div class="education-year">2016 - 2020</div>
-          <div class="education-details">
-            <h4>Masaya Integrated National Highschool</h4>
-          </div>
-        </div>
-        
-        <div class="education-item">
-          <div class="education-year">2020 - 2022</div>
-          <div class="education-details">
-            <h4>STEM</h4>
-            <p class="education-institution">Masaya Integrated National Highschool</p>
-          </div>
-        </div>
 
-        <div class="education-item">
-          <div class="education-year">2023 - current</div>
-          <div class="education-details">
-            <h4>Bachelor of Science in Information Technology</h4>
-            <p class="education-institution">Laguna Polytechnic State University</p>
+          <div class="education-item">
+            <div class="education-year">2023 - current</div>
+            <div class="education-details">
+              <h4>Bachelor of Science in Information Technology</h4>
+              <p class="education-institution">Laguna Polytechnic State University</p>
+            </div>
           </div>
         </div>
-      </div>
-      
-      <div class="cv-download">
-        <a href="#" class="download-button">
-          <i class="fi fi-rr-download"></i> Download Full CV
-        </a>
-      </div>
-    </section>
-  </main>
-  
-  <footer>
-    <div class="ta">ALL RIGHTS RESERVED 2025</div>
-  </footer>
-</body>
+        
+        <div class="cv-download">
+          <a href="#" class="download-button">
+            <i class="fi fi-rr-download"></i> Download Full CV
+          </a>
+        </div>
+      </section>
+    </main>
+    
+    <footer>
+      <div class="ta">ALL RIGHTS RESERVED 2025</div>
+    </footer>
+  </body>
+  <script src="../static/js/animation.js"></script>
 </html>

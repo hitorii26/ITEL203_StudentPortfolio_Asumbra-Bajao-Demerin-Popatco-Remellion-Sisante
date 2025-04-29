@@ -4,10 +4,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Wonder Pets | Demerin's Profile</title>
-  <base href="C:\Users\hitorii\Desktop\ITEL203_StudentPortfolio_Asumbra-Bajao-Demerin-Popatco-Remillion-Sisante\">
-  <link rel="stylesheet" href="static\css/homepage.css">
-  <link rel="stylesheet" href="static\css/members.css">
-  <link rel="stylesheet" href="static\css/profile.css">
+  <link rel="stylesheet" href="../static/css/homepage.css">
+  <link rel="stylesheet" href="../static/css/members.css">
+    <link rel="stylesheet" href="../static/css/animation.css">
+    <link rel="stylesheet" href="../static/css/profile.css">
   <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.6.0/uicons-regular-rounded/css/uicons-regular-rounded.css'>
   <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.6.0/uicons-brands/css/uicons-brands.css'>
 </head>
@@ -19,32 +19,38 @@
       <div class="logo-text">Wonder Pets</div>
     </div>
     <div class="portfolio">PORTFOLIO</div>
-  </header>
-  <hr>
-  <nav>
-    <ul class="nav-links">
-      <li>
-        <a href="templates/homepage.html">Home</a>
-      </li>
-      <li>
-        <a href="templates/members.html">Members</a>
-      </li>
-      <li>
-        <a href="#">About</a>
-      </li>
-    </ul>
-  </nav>
-  
-  <main class="profile-main">
-    <!-- Back button -->
-    <a href="template/members.html" class="back-button">
-      <i class="fi fi-rr-arrow-left"></i> Back to Members
-    </a>
+    <header>
+      <div class="logo-container slide-in-bottom">
+        <div class="logo"></div>
+        <div class="logo-text">Wonder Pets</div>
+      </div>
+      <div class="portfolio slide-in-bottom">PORTFOLIO</div>
+    </header>
+    <hr class="slide-in-bottom">
+    <nav>
+      <ul class="nav-links slide-in-bottom">
+        <li>
+          <a href="../template/homepage.html">Home</a>
+        </li>
+        <li>
+          <a href="../template/members.html" class="active">Members</a>
+        </li>
+        <li>
+          <a href="#">About</a>
+        </li>
+      </ul>
+    </nav>
     
-    <!-- Profile Header Section -->
-    <section class="profile-header">
-      <div class="profile-photo-container">
-        <img src="static/resources/avatar3.jpg" alt="Asumbra" class="profile-photo" onerror="this.src='/placeholder.svg?height=300&width=300'">
+    <main class="profile-main">
+      <!-- Back button -->
+      <a href="../template/members.html" class="back-button back-in-Left">
+        <i class="fi fi-rr-arrow-left"></i> Back to Members
+      </a>
+      
+      <!-- Profile Header Section -->
+      <section class="profile-header back-in-Left2">
+        <div class="profile-photo-container scroll-in-up">
+        <img src="../static/resources/avatar3.jpg" alt="demerin" class="profile-photo" onerror="this.src='/placeholder.svg?height=300&width=300'">
       </div>
       <div class="profile-info">
         <h1 class="profile-name">Luke Jeremy O. Demerin</h1>
@@ -67,7 +73,7 @@
     </section>
     
     <!-- Projects Section -->
-    <section class="profile-section projects-section">
+    <section class="profile-section projects-section scroll-in-left">
       <div class="projects-header">
         <h2 class="section-title">Projects</h2>
         <div class="projects-filter">
@@ -82,7 +88,7 @@
         <!-- Project 1 -->
         <div class="project-card">
           <div class="project-screenshot">
-            <img src="static/resources/demerin-project1.png" alt="Project Screenshot" onerror="this.src='/placeholder.svg?height=200&width=350'">
+            <img src=../static/resources/demerin-project1.png" alt="Project Screenshot" onerror="this.src='/placeholder.svg?height=200&width=350'">
           </div>
           <div class="project-info">
             <h3 class="project-name">E-commerce Website</h3>
@@ -103,7 +109,7 @@
         <!-- Project 2 -->
         <div class="project-card">
           <div class="project-screenshot">
-            <img src="static/resources/demerin-project2.png" alt="Project Screenshot" onerror="this.src='/placeholder.svg?height=200&width=350'">
+            <img src="../static/resources/demerin-project2.png" alt="Project Screenshot" onerror="this.src='/placeholder.svg?height=200&width=350'">
           </div>
           <div class="project-info">
             <h3 class="project-name">Apartment Management System</h3>
@@ -121,7 +127,7 @@
       <!-- Project 3 -->
       <div class="project-card">
         <div class="project-screenshot">
-          <img src="static/resources/demerin-project3.png" alt="Project Screenshot" onerror="this.src='/placeholder.svg?height=200&width=350'">
+          <img src="../static/resources/demerin-project3.png" alt="Project Screenshot" onerror="this.src='/placeholder.svg?height=200&width=350'">
         </div>
         <div class="project-info">
           <h3 class="project-name">C# Interactive Quiz Game</h3>
@@ -142,24 +148,24 @@
     </section>
     
     <!-- Skills Section -->
-    <section class="profile-section skills-section">
+    <section class="profile-section skills-section scroll-in-Right">
       <h2 class="section-title">Skills & Expertise</h2>
       <div class="skills-container">
         <div class="skills-column">
           <h3 class="skills-subtitle">Technical Skills</h3>
           <ul class="skills-list">
             <li>
-              <img src="static/resources/java.png" alt="html">
+              <img src="../static/resources/java.png" alt="html">
             </li>
             <li>
             <li>
-              <img src="static/resources/js.png" alt="js">
+              <img src="../static/resources/js.png" alt="js">
             </li>
             <li>
-              <img src="static/resources/python.png" alt="python">
+              <img src="../static/resources/python.png" alt="python">
             </li>
             <li>
-              <img src="static/resources/mysql.png" alt="mysql">
+              <img src="../static/resources/mysql.png" alt="mysql">
             </li>
           </ul>
         </div>
@@ -175,7 +181,7 @@
     </section>
     
     <!-- Contact Information Section -->
-    <section class="profile-section contact-section">
+    <section class="profile-section contact-section scroll-in-Right">
       <h2 class="section-title">Contact Information</h2>
       <div class="contact-container">
         <div class="contact-item">
@@ -211,7 +217,7 @@
     </section>
     
     <!-- CV Section -->
-    <section class="profile-section cv-section">
+    <section class="profile-section cv-section scroll-in-Right">
       <h2 class="section-title">Curriculum Vitae</h2>
       <div class="education-container">
         <h3 class="cv-subtitle">Educational Background</h3>
@@ -258,4 +264,5 @@
     <div class="ta">ALL RIGHTS RESERVED 2025</div>
   </footer>
 </body>
+<script src="../static/js/animation.js"></script>
 </html>
